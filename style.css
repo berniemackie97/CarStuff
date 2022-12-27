@@ -1,0 +1,55 @@
+/* Style the nav bar */
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Style the nav links */
+nav a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Style the active nav link */
+nav a.active {
+    background-color: #444;
+}
+
+/* Style the nav links on hover */
+nav a:hover {
+    background-color: #555;
+}
+
+/* Style the modal */
+.modal {
+    display: none;
+    /* Hide the modal by default */
+    position: fixed;
+    /* Make the modal fixed to the page */
+    z-index: 1;
+    /* Make the modal appear on top of other elements */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Make the modal take up the full width of the page */
+    height: 100%;
+    /* Make the modal take up the full height of the page */
+    overflow: auto;
+    /* Add scrollbars to the modal if needed */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Make the modal's background semi-transparent */
+}
+
+/* Style the modal content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}

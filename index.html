@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>My Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Button that opens the modal -->
+        <button id="openModalButton">Look up car information</button>
+
+        <!-- Modal for entering car information -->
+        <div id="carModal" class="modal" hidden="true">
+            <div class="modal-content">
+                <!-- Form for entering car information -->
+                <form>
+                    <label for="vin">Vin:</label><br>
+                    <input type="text" id="vin" name="vin"><br>
+                    <label for="make">Make:</label><br>
+                    <input type="text" id="make" name="make"><br>
+                    <label for="model">Model:</label><br>
+                    <input type="text" id="model" name="model"><br>
+                    <label for="year">Year:</label><br>
+                    <input type="text" id="year" name="year"><br>
+                    <!-- Button for submitting the form -->
+                    <button type="submit">Submit</button>
+                    <!-- Button for closing the form -->
+                    <button data-dismiss="modal">Close</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- footer content goes here -->
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
